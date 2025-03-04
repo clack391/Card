@@ -3,44 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional profile of Precious Onotu - Software Developer and AI Specialist">
     <title>Precious Onotu - Profile Card</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- External Resources -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="profile-card">
-        <div class="profile-picture">
-            <img src="profile.jpg" alt="Precious Onotu">
-        </div>
-        <div class="profile-content">
-            <h2 class="profile-name">Precious Onotu</h2>
-            <p class="profile-description">
-                Software Developer | AI Data Quality Specialist<br>
-                Python Programmer &amp; Technical Consultant
-            </p>
-            <ul class="social-icons">
-                <li>
-                    <a href="https://x.com/Preciou_jay" style="--color: #1DA1F2;" target="_blank" rel="noopener">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100073968344965" style="--color: #1877F2;" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/clack_391" style="--color: #f56040;" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/precious-onotu-aba9b6312" style="--color: #0A66C2;" target="_blank" rel="noopener">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <main class="profile-container">
+        <article class="profile-card">
+            <!-- Profile Image Section -->
+            <figure class="profile-picture">
+                <img src="profile.jpg" 
+                     alt="Professional portrait of Precious Onotu"
+                     width="200"
+                     height="200">
+            </figure>
+
+            <!-- Profile Content Section -->
+            <section class="profile-content">
+                <header>
+                    <h2 class="profile-name">Precious Onotu</h2>
+                    <p class="profile-description">
+                        Software Developer | AI Data Quality Specialist<br>
+                        Python Programmer &amp; Technical Consultant
+                    </p>
+                </header>
+
+                <!-- Social Media Links -->
+                <nav aria-label="Social media profiles">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://x.com/Preciou_jay"
+                               class="social-link"
+                               style="--color: #1DA1F2;"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Follow on Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100073968344965"
+                               class="social-link"
+                               style="--color: #1877F2;"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Connect on Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/clack_391"
+                               class="social-link"
+                               style="--color: #f56040;"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Follow on Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/precious-onotu-aba9b6312"
+                               class="social-link"
+                               style="--color: #0A66C2;"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Connect on LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
