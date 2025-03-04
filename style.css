@@ -11,22 +11,20 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
 }
 
 /* Profile Card Container */
 .profile-card {
     position: relative;
     width: 350px;
-    height: 500px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background: #2c3e50;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     padding: 40px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
+    overflow: hidden;
 }
 
 .profile-card:hover {
@@ -42,7 +40,7 @@ body {
     margin: 0 auto 30px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid #1DA1F2;
     transition: all 0.5s ease;
     animation: float 6s ease-in-out infinite;
 }
@@ -65,16 +63,13 @@ body {
 
 .profile-name {
     font-size: 1.8em;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 10px;
-    background: linear-gradient(45deg, #00b4d8, #90e0ef);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    color: #1DA1F2;
+    margin-bottom: 15px;
 }
 
 .profile-description {
-    color: rgba(255, 255, 255, 0.8);
+    color: #dcdde1;
     font-size: 0.9em;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -95,29 +90,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     font-size: 1.2em;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.social-icons a::before {
-    content: '';
-    position: absolute;
-    inset: 2px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, var(--color), transparent);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.social-icons a:hover::before {
-    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
+    background: var(--color);
     transform: translateY(-5px);
     box-shadow: 0 0 15px var(--color);
 }
@@ -125,7 +107,7 @@ body {
 /* Animations */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-15px); }
 }
 
 /* Responsive Design */
@@ -133,5 +115,10 @@ body {
     .profile-card {
         width: 90%;
         padding: 30px;
+    }
+    
+    .profile-picture {
+        width: 120px;
+        height: 120px;
     }
 }
